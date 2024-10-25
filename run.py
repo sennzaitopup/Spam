@@ -1,7 +1,6 @@
 import requests
 import re
 
-
 url = input("URL : ")
 while True:
     # Make a GET request
@@ -14,7 +13,7 @@ while True:
 
         if match:
             number = match.group(1)
-            print(number)  # Output: 606
+            print(f"Inject OK => {number}")  # Output: 606
         else:
             print("Number not found.")
     else:
